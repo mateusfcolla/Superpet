@@ -1,0 +1,263 @@
+.wk-btn {
+  @apply text-center  text-white;
+  align-items: center;
+  background: #1f2122;
+  border-color: #1f2122;
+  border-radius: 0.5rem;
+  border-style: solid;
+  border-width: 3px;
+  //the default is md, thats why the styles are repeaded
+  display: flex;
+  font-family: "Inter", sans-serif;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 600;
+  gap: 1rem;
+  justify-content: center;
+  line-height: 145%;
+  padding: 0.8rem 1.6rem;
+  transition: all 0.3s;
+  svg {
+    margin: auto;
+    transition: all 0.3s;
+  }
+  &:hover {
+    background: #242829;
+    border-color: #242829;
+  }
+  &--sm {
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+  }
+  &--md {
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 145%;
+  }
+  &--lg {
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    padding: 1rem 1.8rem;
+  }
+  &--primary {
+    background-color: #0085fe;
+    border-color: #0085fe;
+    &:hover {
+      background: #1168b8;
+      border-color: #1168b8;
+    }
+    &:disabled {
+      background: #364965;
+      border-color: #364965;
+      color: #7e8ea7;
+      svg,
+      path {
+        fill: #7e8ea7;
+      }
+    }
+    &:focus {
+      border-color: #5cb2ff;
+    }
+    &-outline {
+      background-color: transparent;
+      border-color: #0085fe;
+      border-style: solid;
+      border-width: 3px;
+      &:hover {
+        background-color: #0085fe;
+        border-color: #0085fe;
+      }
+      &:disabled {
+        border-color: #1d5990;
+        color: #969696;
+        svg,
+        path {
+          fill: #969696;
+        }
+        &:hover {
+          background-color: transparent;
+          border-color: #1d5990;
+          color: #969696;
+        }
+      }
+      &:focus {
+        border-color: #5cb2ff;
+      }
+    }
+  }
+  &--secondary {
+    background-color: #fbff3a;
+    border-color: #fbff3a;
+    color: #42431e;
+    font-weight: 600;
+    &:hover {
+      background: #616315;
+      border-color: #616315;
+      color: #fbff3a;
+    }
+    &:disabled {
+      background: #696a22;
+      border-color: #696a22;
+      color: #8b8658;
+      svg,
+      path {
+        fill: #8b8658;
+      }
+    }
+    &:focus {
+      background: #fbff3a;
+      background: #fbff3a;
+      border: 3px solid #fcff5a;
+      color: #42431e;
+    }
+    &-outline {
+      background-color: transparent;
+      border-color: #fbff3a;
+      border-style: solid;
+      border-width: 3px;
+      &:hover {
+        background-color: #fbff3a;
+        border-color: #fbff3a;
+        color: #42431e;
+      }
+      &:disabled {
+        border-color: #7a7b2d;
+        color: #969696;
+        svg,
+        path {
+          fill: #969696;
+        }
+        &:hover {
+          background-color: transparent;
+          border-color: #7a7b2d;
+          color: #969696;
+        }
+      }
+      &:focus {
+        border-color: #fcff5a;
+      }
+    }
+  }
+  &--default {
+    background-color: #1f2122;
+    border-color: #1f2122;
+    color: white;
+    &:hover {
+      background: #242829;
+      border-color: #242829;
+      color: white;
+    }
+    &:disabled {
+      background: #1f2122;
+      border-color: #1f2122;
+      color: #656565;
+      svg,
+      path {
+        fill: #656565;
+      }
+    }
+    &:focus {
+      background: #1f2122;
+      background: #1f2122;
+      border: 3px solid #1c5282;
+      color: white;
+    }
+    &-outline {
+      background-color: transparent;
+      border-color: #1f2122;
+      border-style: solid;
+      border-width: 3px;
+      color: white;
+      &:hover {
+        background-color: #1f2122;
+        border-color: #1f2122;
+        color: white;
+      }
+      &:disabled {
+        border-color: #1f2122;
+        color: #656565;
+        svg,
+        path {
+          fill: #656565;
+        }
+        &:hover {
+          background-color: transparent;
+          border-color: #1f2122;
+          color: #656565;
+        }
+      }
+      &:focus {
+        border-color: #1c5282;
+      }
+      &--colored {
+        &:hover {
+          border-color: #0085fe;
+        }
+      }
+    }
+  }
+  &--error {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    &:hover {
+      background: #a71f2b;
+      border-color: #a71f2b;
+    }
+    &:disabled {
+      background: #a71f2b;
+      border-color: #a71f2b;
+      color: #ffffff9c;
+      svg,
+      path {
+        fill: #ffffff9c;
+      }
+    }
+    &:focus {
+      background: #dc3545;
+      background: #dc3545;
+      border: 3px solid #a71f2b;
+      color: white;
+    }
+    &-outline {
+      background-color: transparent;
+      border-color: #dc3545;
+      border-style: solid;
+      border-width: 3px;
+      color: white;
+      &:hover {
+        background-color: #dc3545;
+        border-color: #dc3545;
+        color: white;
+      }
+      &:disabled {
+        border-color: #dc3545;
+        color: #ffffff9c;
+        svg,
+        path {
+          fill: #ffffff9c;
+        }
+        &:hover {
+          background-color: transparent;
+          border-color: #dc3545;
+          color: #ffffff9c;
+        }
+      }
+      &:focus {
+        border-color: #a71f2b;
+      }
+    }
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

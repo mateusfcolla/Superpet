@@ -1,0 +1,36 @@
+.wk-create-client {
+  &__title {
+    color: #dbdbdb;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    @apply font-Hind;
+  }
+  &__input-wrapper {
+    margin-bottom: 2.5rem;
+    input,
+    textarea {
+      background: #1c1e1e;
+      border: 2px solid #2c2f2f;
+      border-radius: 4px;
+      color: #dbdbdb;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      margin-top: 1rem;
+      padding: 12px 15px;
+      width: 100%;
+
+      @apply font-Hind;
+    }
+    textarea {
+      min-height: 13rem;
+    }
+    &--grid {
+      @apply grid grid-cols-2;
+      gap: 17px;
+    }
+  }
+}

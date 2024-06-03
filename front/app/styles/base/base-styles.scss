@@ -1,0 +1,50 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/* ================scroolbar=================== */
+
+/* width */
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: linear-gradient(135deg, #0c0910 0%, #151526 100%);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #28243d;
+  border-radius: 10px;
+  transition: background-color 0.8s;
+}
+
+::-webkit-scrollbar-corner {
+  border-radius: 10px;
+}
+
+/* ================scroolbar=================== */
+
+html {
+  /* this defines what one rem is */
+  font-size: 62.5%;
+}
+
+body {
+  //background: linear-gradient(135deg, #0c0910 0%, #151526 100%);
+  box-sizing: border-box; /* Padding and Margin are no longer part of the width and height of the element */
+  color: white;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  @apply font-Hind;
+  //background-color: var(--lightPrimary);
+  .wraper {
+    overflow: hidden;
+  }
+}

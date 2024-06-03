@@ -1,0 +1,25 @@
+.wp-fixed-socials {
+    display: block;
+    position: fixed;
+    bottom: 13vh;
+    left: 0;
+    padding: 4rem 1.25rem;
+    padding-right: 2rem;
+    background: #0071bc;
+    border-radius: 0 15px 15px 0;
+    z-index: 1000;
+    font-size: 2.2rem;
+
+    a {
+        color: #fff;
+        transition: .2s;
+
+        &:hover {
+            color: #d1e0e9;
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        display: none;
+    }
+}

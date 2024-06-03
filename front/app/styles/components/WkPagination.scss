@@ -1,0 +1,75 @@
+.wk-pagination {
+  align-items: center;
+  color: #dbdbdb;
+  display: flex;
+  fill: #dbdbdb;
+  flex-direction: row;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  gap: 1.6rem;
+  justify-content: flex-start;
+  line-height: normal;
+  margin-top: 1.4rem;
+
+  width: 100%;
+  &__button {
+    transition: all 0.3s;
+    &--arrow {
+      transition: all 0.1s;
+      svg,
+      path {
+        fill: #dbdbdb;
+        transition: all 0.1s;
+      }
+      &--inactive {
+        color: transparent;
+        fill: transparent;
+        svg,
+        path {
+          fill: transparent;
+        }
+        &:hover {
+          color: transparent;
+          fill: transparent;
+          svg,
+          path {
+            fill: transparent;
+          }
+        }
+      }
+    }
+
+    &--active {
+      color: #0085fe;
+    }
+    &:hover {
+      color: #0085fe;
+      fill: #0085fe;
+      svg,
+      path {
+        fill: #0085fe;
+      }
+    }
+  }
+  &-wrapper {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 7rem;
+    width: 100%;
+  }
+  &__clients-per-page-input {
+    background: #1c1d1e;
+    border: 2px solid #2c2d2f;
+    border-radius: 0.4rem;
+    color: white;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 0.6rem 1.2rem;
+    width: 7rem;
+  }
+}

@@ -1,0 +1,76 @@
+.wkode-admin-sidebar {
+  background-color: #1a1b1e;
+  border-right: 1px solid #2c3131;
+  font-size: 2rem;
+  height: 100%;
+  left: 0;
+  max-height: 100%;
+  overflow: hidden;
+  padding-top: 8.4rem;
+  position: fixed;
+  top: 0;
+  transition: all 0.3s;
+  width: 6.1rem;
+  z-index: 998;
+  @apply font-Inter;
+  &__menu {
+    &-wrapper {
+      margin: 0 1.8rem;
+    }
+  }
+  &__menu-item {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 600;
+    gap: 2rem;
+    height: 2.6rem;
+    justify-content: flex-start;
+    line-height: 145%;
+    padding: 0;
+    position: relative;
+    transition: all 0.3s;
+    width: 100%;
+    svg {
+      min-width: 2.6rem;
+      &,
+      path {
+        transition: all 0.3s;
+      }
+    }
+    &:not(:last-of-type) {
+      margin-bottom: 1.6rem;
+    }
+    &--active {
+      svg,
+      path {
+        fill: #0085fe;
+      }
+      color: #0085fe;
+    }
+    &:hover {
+      svg,
+      path {
+        fill: #0085fe;
+      }
+      color: #0085fe;
+    }
+    &--lock {
+      bottom: 2.1rem;
+      margin: 0 1.8rem;
+      position: absolute;
+    }
+  }
+  &--open-in-hover {
+    &:hover {
+      width: 25rem;
+    }
+  }
+  &--open {
+    width: 25rem;
+  }
+}

@@ -1,0 +1,104 @@
+.ModalAreYouSure__overlay {
+  animation: overlayShow 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  backdrop-filter: blur(7px);
+  background: linear-gradient(
+    180deg,
+    rgb(20 21 27) 10.59%,
+    rgb(20 21 27) 90.01%
+  );
+  color: black;
+  content: "";
+  height: 100%;
+  inset: 0;
+  left: 50%;
+  opacity: 0.3;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  z-index: 999;
+}
+
+.ModalAreYouSure__content {
+  animation: contentShow 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  backdrop-filter: blur(12px);
+  background-color: #1a1b1e;
+  border-radius: 6px;
+  box-shadow: 0px 10px 65px 16px rgba(0, 0, 0, 0.5);
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  height: 18vh;
+  justify-content: space-between;
+  left: 50%;
+  max-height: 100vh;
+  max-width: 130rem;
+  padding: 25px;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s;
+  width: 22vw;
+  z-index: 999;
+  &:focus {
+    outline: none;
+  }
+  &--taller {
+    height: 33vh;
+    width: 33vw;
+  }
+}
+
+.ModalAreYouSure__title {
+  color: var(--mauve-12);
+  font-size: 17px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.DialogDescription {
+  color: var(--mauve-11);
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 10px 0 20px;
+}
+
+.ModalAreYouSure__btn {
+  align-items: center;
+  border-radius: 100%;
+  color: var(--violet-11);
+  display: inline-flex;
+  font-family: inherit;
+  height: 25px;
+  justify-content: center;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 25px;
+}
+.IconButton:hover {
+  background-color: var(--violet-4);
+}
+.IconButton:focus {
+  box-shadow: 0 0 0 2px var(--violet-7);
+}
+
+@keyframes overlayShow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.3;
+  }
+}
+
+@keyframes contentShow {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -48%) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}

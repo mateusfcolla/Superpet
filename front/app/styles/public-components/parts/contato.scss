@@ -1,0 +1,27 @@
+.wk-contato {
+
+    .wk-form {
+
+        label {
+            padding-bottom: 1.2rem;
+        }
+
+        input, textarea {
+            background: #ffffff;
+            border-color: #dddddd;
+            color: #141414;
+            margin-bottom: 2rem;
+        }
+
+        .wk-checkbox {
+            display: flex;
+            align-items: center!important;
+
+            input {
+                margin-right: 1rem;
+                width: fit-content;
+            }
+        }
+
+    }
+}

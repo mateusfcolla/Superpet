@@ -1,0 +1,39 @@
+version: "3.9"
+services:
+  api:
+    container_name: api
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      - DB_SOURCE=postgresql://root:secret@postgres:5432/superpet?sslmode=disable
+    entrypoint: ["/app/wait-for.sh", "postgres:5432", "--", "/app/start.sh"]
+    command: ["/app/main"]
+    restart: always
+    deploy:
+      resources:
+        limits:
+          memory: 300m
+  gotenberg:
+    container_name: pdf-generator
+    image: gotenberg/gotenberg:7
+    deploy:
+      resources:
+        limits:
+          memory: 300m
+  front:
+    container_name: front
+    build:
+      context: .
+      dockerfile: front/Dockerfile
+    ports:
+      - "3000:80"
+    environment:
+      - NEXT_PUBLIC_API_URL=http://api:8080
+    restart: always
+    deploy:
+      resources:
+        limits:
+          memory: 400m

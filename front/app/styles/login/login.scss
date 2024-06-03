@@ -1,0 +1,86 @@
+.wkode-login-form {
+  background-blend-mode: multiply;
+  background-color: #1a1b1e;
+  background-image: url("../../../public/static/images/background-image-login.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @apply font-Inter;
+  &__wrapper {
+    align-items: center;
+    background: #1a1b1e;
+    border: 4px solid #2c3131;
+    border-radius: 2.4rem;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 4.4rem;
+    padding: 6.4rem 3.2rem;
+  }
+
+  &__title {
+    color: white;
+    font-size: 4.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    margin-bottom: 0.8rem;
+    &-wrapper {
+      text-align: center;
+    }
+  }
+  &__subtitle {
+    color: #dbdbdb;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 145%;
+  }
+  label {
+    color: #dbdbdb;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%;
+  }
+  input,
+  textarea {
+    background: #1c1e1e;
+    border: 2px solid #2c2f2f;
+    border-radius: 4px;
+    color: #dbdbdb;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 1rem;
+    padding: 12px 15px;
+    width: 100%;
+
+    @apply font-Hind;
+  }
+  &--failed-login {
+    input,
+    textarea {
+      border: 2px solid #fa0000;
+    }
+    p.error-message {
+      color: #fa0000;
+      font-size: 1.2rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%;
+    }
+  }
+  &__forgot-password {
+    color: #dbdbdb;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin-top: 1rem;
+    text-align: right;
+    &-wrapper {
+      margin-top: 1rem;
+    }
+  }
+}
